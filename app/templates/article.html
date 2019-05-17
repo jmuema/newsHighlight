@@ -1,0 +1,37 @@
+{% extends 'base.html'%}
+
+<!-- Styles block -->
+{% block styles %}
+
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/article.css')}}">
+
+{% endblock %}
+
+<!--Block content-->
+{% block content %}
+<div class="container move">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="artitle"> News Articles </h2>
+        </div>
+
+    {% for indexarticle in myarticle %}
+        <div class="col-sm-6">
+            
+            <div class="card card movecard">
+                <img class="card-img-top imagesize img-rounded" src="{{indexarticle.urlToImage}}" alt="article image">
+                    <div class="card-body">
+                        <h4 class="card-title">{{indexarticle.title}}</h4>
+                        <p>Published at {{indexarticle.publishedAt}}</p>
+                        <p class="card-text">{{indexarticle.content | truncate(100) }}</p>
+                        <a href="{{indexarticle.url}}"><button class="btn">Read full story</button></a> 
+                    </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
+ 
