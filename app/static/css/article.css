@@ -1,0 +1,44 @@
+/* .articleimg{
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 2em;
+} */
+body{
+  background-color: #101010;
+  color: white;
+  font-family: 'Sarabun', sans-serif;
+}
+.imagesize{
+  width: 100%;
+  height: auto;
+}
+.artitle{
+  text-align: center;
+  color: #ffc47e;
+  font-size: 36px;
+}
+.move{
+  margin-left: 100px;
+}
+.movecard{
+  margin: 30px;
+}
+.btn{
+  background-color: #101010; 
+  border: 2px solid #ffc47e;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 13px;
+}
+.btn:hover {
+  background-color: #ffc47e; 
+  color: black;
+}
