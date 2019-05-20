@@ -1,5 +1,4 @@
 # News Highlight
-
 This is a flask application used to fetch international news using an api
 
 ## Author Information
@@ -18,11 +17,9 @@ Written by *Joseph Muema*. My first attempt at using flask(a python framework)
 | `Click on a news source` | None |  News articles displayed
 | `Click on the read full story article` | None |  Redirection to the official article news site
 
-
 ### Contact Information
 
 To reach me, email me at: > Jmuema95@gmail.com
-
 
 ### License
 
